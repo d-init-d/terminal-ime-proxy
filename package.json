@@ -1,0 +1,70 @@
+{
+  "name": "terminal-ime-proxy",
+  "version": "1.0.0",
+  "description": "Fix IME input for terminal CLI applications like Claude Code, Gemini CLI, and other React Ink-based tools. Supports Vietnamese, Chinese, Japanese, and Korean input methods.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "terminal-ime-proxy": "./bin/terminal-ime-proxy.js",
+    "timp": "./bin/terminal-ime-proxy.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "lint": "eslint src/**/*.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "ime",
+    "input-method",
+    "terminal",
+    "cli",
+    "vietnamese",
+    "chinese",
+    "japanese",
+    "korean",
+    "cjk",
+    "claude-code",
+    "gemini-cli",
+    "react-ink",
+    "tty",
+    "pty",
+    "keyboard",
+    "unicode",
+    "telex",
+    "pinyin",
+    "unikey"
+  ],
+  "author": "d-init-d",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/d-init-d/terminal-ime-proxy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/d-init-d/terminal-ime-proxy/issues"
+  },
+  "homepage": "https://github.com/d-init-d/terminal-ime-proxy#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "node-pty": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0",
+    "eslint": "^8.55.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0"
+  }
+}
